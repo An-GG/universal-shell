@@ -45,6 +45,24 @@ angg@pro universal-shell %
 22     "prepublishOnly": "pnpm test",
 ```
 
+# aight LFFFFGGGGGGGG
+
+# just checked we guuci now  >:)
+
+```zsh
+angg@pro universal-shell % npm i
+
+added 247 packages, and audited 248 packages in 2s
+
+61 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+angg@pro universal-shell %
+```
+
+> **damn i really gotta get around to making a habit of getting good at ci / github actions / wtv regression testing** 
+    - as a webchad this really doesn't feel like the move ngl but the systemincels were lowkey cooking
 
 
 ### Installation
