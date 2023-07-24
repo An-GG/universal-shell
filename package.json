@@ -46,5 +46,8 @@
       "release": true,
       "releaseName": "v${version}"
     }
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
   }
 }
