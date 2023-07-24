@@ -3,8 +3,6 @@
 Library for calling POSIX-style shell commands cross-platform. Automatically
 translates commands for Windows support out of the box.
 
-`shell.run()` returns a Promise that will resolve or reject to an object
-containing process information of type `SpawnResult`:
 
 
 ### Installation
@@ -54,7 +52,7 @@ If you decide to alter the code in this project, you need to follow these instru
 to make your changes actually take effect when you `npm install` this project as a 
 node module. 
 
-> **btw:** all of the source code is located in the `src` folder, that is where the core logic of the application is defined. the other files are there to finetune the settings of commands we use, like `npm` and `git` and `tsmodule` and `npx tsc` (yes, there are alot of files and they make the project look ugly and bloated. yes, we have tried very hard to figure out how to fix this, but for now **just pop open the `./src` directly and ignore all that noise outside**)
+> **btw:** all of the source code is located in the `src` folder, that is where the core logic of the application is defined. the other files are there to adjust the settings of commands we use, like `npm` and `git` and `tsmodule` and `npx tsc` (yes, there are alot of files and they make the project look ugly and bloated. yes, we have tried very hard to figure out how to fix this, but for now **just pop open the `./src` directly and ignore all that noise outside**)
 
 Here are the instructions:
 
@@ -67,14 +65,40 @@ angg@pro universal-shell % npm install
 ```zsh
 angg@pro universal-shell % npm run build
 ```
-
 2. Add and commit all your changes + the new generated files in the `./dist` folder to the git timeline, and push it to GitHub. 
 ```zsh
 angg@pro universal-shell % git add --all
+
 angg@pro universal-shell % git commit -m 'updated readme with ________ and fixed bug where ________ in the ______ file.'
+[master b102e86] updated readme with ________ and fixed bug where ________ in the ______ file.
+ 2 files changed, 27 insertions(+), 4 deletions(-)
+
 angg@pro universal-shell % git push
+... Writing objects: 100% (15/15), 31.86 KiB | 7.97 MiB/s, done.
+...
+...
+To github.com:_______________/universal-shell.git
+   79ad5fc..b102e86  master -> master
+
 ```
 
+#### The rest of the README from our typescript lord and savior ctjlewis 
+
+> This project is a **fork** of [github.com/SpellcraftAI/universal-shell](https://github.com/SpellcraftAI/universal-shell), created by [ctjlewis](https://github.com/ctjlewis)
+---
+***thx bby for showing us how its done. single handedly rescued me from tsconfig hell <3***
+
+
+I clicked the fork button so I could have my own custom branch over at [github.com/doofenshmirtz-inc/](https://github.com/doofenshmirtz-inc/), since I wanted to make a few modifications to the configuration files (the files that adjust the settings of our commands like `npm`, `git`, `tsmodule`).
+
+This way I can upload my modified custom version of the code to GitHub and run `npm install` with a GitHub link, but I can avoid having to fuck/with ctjlewis's project or bother them at all (i don't want to have to think about how much other people care about my personalized Quality of Life improvements, **since they probably don't give a shit**)
+
+
+### Usage
+---
+
+`shell.run()` returns a Promise that will resolve or reject to an object
+containing process information of type `SpawnResult`:
 
 ```ts
 export interface SpawnResult {
