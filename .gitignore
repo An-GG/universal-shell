@@ -4,7 +4,7 @@ node_modules
 service-account.json
 
 # Emitted output.
-dist/
+# dist/
 
 # Incremental TS build info.
 *.tsbuildinfo
