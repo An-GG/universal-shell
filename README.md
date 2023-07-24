@@ -6,6 +6,53 @@ translates commands for Windows support out of the box.
 `shell.run()` returns a Promise that will resolve or reject to an object
 containing process information of type `SpawnResult`:
 
+
+### Installation
+
+You can install packages directly from git repositories like this:
+```bash
+npm i https://github.com/doofenshmirtz-inc/universal-shell.git
+```
+
+Or you can install packages from folders on your computer like this:
+```zsh
+angg@pro External % git clone https://github.com/doofenshmirtz-inc/universal-shell.git
+... Resolving deltas: 100% (2/2), done.
+
+# Great, now there is a folder called universal-shell on our computer.
+# Let's get a quick view of the files and folders inside of it:
+
+angg@pro External % tree -L 1 universal-shell
+universal-shell
+├── README.md
+├── ava.config.js
+├── dist
+├── node_modules
+├── package-lock.json
+├── package.json
+├── pnpm-lock.yaml
+├── src
+├── test
+└── tsconfig.json
+
+
+# Currently, I'm at the folder located at ~/Projects/External/universal-shell.
+# I'm going to change my path to a different folder called TypeScriptNodeProject.
+
+angg@pro External % cd ~/Projects/TypeScriptNodeProject
+
+
+# Finally, this is how to you install your local copy of the universal-shell package 
+# into TypeScriptNodeProject:
+
+angg@pro TypeScriptNodeProject % npm i ~/Projects/External/universal-shell
+```
+
+### Building / Exporting
+
+
+
+
 ```ts
 export interface SpawnResult {
   code: number | null;
