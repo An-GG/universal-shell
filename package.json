@@ -20,7 +20,8 @@
     "test": "pnpm export && ava",
     "retest": "ava",
     "prepublishOnly": "pnpm test",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix",
+    "postinstall": "npm run export"
   },
   "devDependencies": {
     "@tsmodule/log": "^2.2.1",
