@@ -1,4 +1,4 @@
-# `universal-shell`
+# universal-shell
 
 Library for calling POSIX-style shell commands cross-platform. Automatically
 translates commands for Windows support out of the box.
