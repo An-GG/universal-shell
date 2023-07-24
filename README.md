@@ -56,16 +56,16 @@ node module.
 
 Here are the instructions:
 
-0. Run `npm install` to install all the node modules you need to build this project. (when working with projects that use `node_modules/package.json`, this should be the first thing you do immediately after downloading the project with `git clone` onto your computer)
+**0.** Run `npm install` to install all the node modules you need to build this project. (when working with projects that use `node_modules/package.json`, this should be the first thing you do immediately after downloading the project with `git clone` onto your computer)
 ```zsh
 angg@pro universal-shell % npm install
 ```
 
-1. Run the build command to compile the `./src/*.ts` files and turn them into `./dist/*.js` files, because the `node` command (which we use to run JavaScript code on computers) only works with JavaScript and not TypeScript.
+**1.** Run the build command to compile the `./src/*.ts` files and turn them into `./dist/*.js` files, because the `node` command (which we use to run JavaScript code on computers) only works with JavaScript and not TypeScript.
 ```zsh
 angg@pro universal-shell % npm run build
 ```
-2. Add and commit all your changes + the new generated files in the `./dist` folder to the git timeline, and push it to GitHub. 
+**2.** Run these **three commands** to add and commit all your changes + the new generated files in the `./dist` folder to the git timeline, and push it to GitHub. 
 ```zsh
 angg@pro universal-shell % git add --all
 
