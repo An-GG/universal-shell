@@ -3,68 +3,6 @@
 Library for calling POSIX-style shell commands cross-platform. Automatically
 translates commands for Windows support out of the box.
 
-
-# omfg 
-# fucking comma :(
-# almost ruined my night
-
-```
-angg@pro universal-shell % npm i
-npm ERR! code EJSONPARSE
-npm ERR! path /Users/angg/Documents/Projects/External/universal-shell/package.json
-npm ERR! JSON.parse Unexpected string in JSON at position 498 while parsing '{
-npm ERR! JSON.parse   "name": "universal-shell",
-npm ERR! JSON.parse   "descri'
-npm ERR! JSON.parse Failed to parse JSON data.
-npm ERR! JSON.parse Note: package.json must be actual JSON, not just JavaScript.
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /Users/angg/.npm/_logs/2023-07-24T07_20_37_205Z-debug-0.log
-angg@pro universal-shell %
-
-angg@pro universal-shell % what the fuck
-what: the: No such file or directory
-what: fuck: No such file or directory
-
-angg@pro universal-shell %
-angg@pro universal-shell % cat package.json | jq
-parse error: Expected separator between values at line 20, column 10
-angg@pro universal-shell %
-```
-
-```
-                         i am missing comma :(((
-                                |
-                                |
-15   },                         |
-16   "scripts": {               V
-17     "dev": "tsmodule dev",
-18     "build": "npx tsc --build tsconfig.json",
-19     "export": "npm run build"
-20     "test": "pnpm export && ava",
-21     "retest": "ava",
-22     "prepublishOnly": "pnpm test",
-```
-
-# aight LFFFFGGGGGGGG
-
-# just checked we guuci now  >:)
-
-```zsh
-angg@pro universal-shell % npm i
-
-added 247 packages, and audited 248 packages in 2s
-
-61 packages are looking for funding
-  run `npm fund` for details
-
-found 0 vulnerabilities
-angg@pro universal-shell %
-```
-
-> **damn i really gotta get around to making a habit of getting good at ci / github actions / wtv regression testing** 
-    - as a webchad this really doesn't feel like the move ngl but the systemincels were lowkey cooking
-
-
 ### Installation
 
 You can install packages directly from git repositories like this:
@@ -156,6 +94,13 @@ This way I can upload my modified custom version of the code to GitHub and run `
 
 ### Usage
 ---
+
+Create a `shell` object using TypeScript import syntax:
+
+```ts
+import { createShell } from 'universal-shell'
+let shell = createShell();
+```
 
 `shell.run()` returns a Promise that will resolve or reject to an object
 containing process information of type `SpawnResult`:
