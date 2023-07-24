@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "tsmodule dev",
     "build": "npx tsc --build tsconfig.json",
-    "export": "npm run build"
+    "export": "npm run build",
     "test": "pnpm export && ava",
     "retest": "ava",
     "prepublishOnly": "pnpm test",

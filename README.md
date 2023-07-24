@@ -4,6 +4,48 @@ Library for calling POSIX-style shell commands cross-platform. Automatically
 translates commands for Windows support out of the box.
 
 
+# omfg 
+# fucking comma :(
+# almost ruined my night
+
+```
+angg@pro universal-shell % npm i
+npm ERR! code EJSONPARSE
+npm ERR! path /Users/angg/Documents/Projects/External/universal-shell/package.json
+npm ERR! JSON.parse Unexpected string in JSON at position 498 while parsing '{
+npm ERR! JSON.parse   "name": "universal-shell",
+npm ERR! JSON.parse   "descri'
+npm ERR! JSON.parse Failed to parse JSON data.
+npm ERR! JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/angg/.npm/_logs/2023-07-24T07_20_37_205Z-debug-0.log
+angg@pro universal-shell %
+
+angg@pro universal-shell % what the fuck
+what: the: No such file or directory
+what: fuck: No such file or directory
+
+angg@pro universal-shell %
+angg@pro universal-shell % cat package.json | jq
+parse error: Expected separator between values at line 20, column 10
+angg@pro universal-shell %
+```
+
+```
+                         i am missing comma :(((
+                                |
+                                |
+15   },                         |
+16   "scripts": {               V
+17     "dev": "tsmodule dev",
+18     "build": "npx tsc --build tsconfig.json",
+19     "export": "npm run build"
+20     "test": "pnpm export && ava",
+21     "retest": "ava",
+22     "prepublishOnly": "pnpm test",
+```
+
+
 
 ### Installation
 
